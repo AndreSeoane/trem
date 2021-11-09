@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
     <title>Document</title>
-</head>
-<body>
-  
+  </head>
+  <body>
+    <button type="button" onclick="exibirDataHora();">
+      Mostrar Data e Hora
+    </button>
 
-    <button type="button"
-    onclick="exibirDataHora();">
-    Mostrar Data e Hora</button>
-    
     <p id="relogio">Hora Certa:</p>
-    
-    <button type="button"
-    onclick="exibirMensagem();">
-    Exibir Mensagem</button>
-    
+
+    <button type="button" onclick="exibirMensagem();">
+      Exibir Mensagem
+    </button>
+
     <p id="mensagem">Mensagens do Als</p>
 
-    <button type="button"
-    onclick="document.getElementById('relogio').innerHTML = document.getElementById('mensagem').innerHTML ">
-    Trocar</button>
+    <button type="button" onclick="alternarDataHoraPorMensagem();">
+      Trocar
+    </button>
 
-</body>
+    <div id="album">
+      <img id="personagem" src="img/madruga.jpg" alt="Personagem!" width="60px" height="auto" >
+    </div>
+    <button type="button" onclick="trocarPersonagem();" >
+      Trocar Personagem
+    </button>
+  </body>
 </html>
